@@ -5,29 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Using Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>List of Users</title>
+  <!-- Axios -->
+  
+  <title>Indo News | Portal Berita Asli Indonesia</title>
 </head>
 <body>
-    <div class="container px-9">
-        <h1 class="text-3xl font-semibold pb-2">
-            List of Users
-        </h1>
-        <table class="border border-slate-500 border">
-            <thead>
-                <tr class="bg-slate-500 text-slate-300 text-left">
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">ID</th>
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Name</th>
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Username</th>
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Email</th>
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Address</th>
-                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Company</th>
-                </tr>
-            </thead>
-            <tbody id="user"></tbody>
-        </table>
+    <div class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white ml-20 pr-6">
+          <span class="font-semibold text-xl tracking-tight">Indo News</span>
+        </div>
     </div>
 
+    <form class="my-16 mx-auto px-24">
+        <div class="flex items-center border-b border-teal-500 py-2">
+          <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" id="search" type="text" placeholder="Search News...">
+          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" onclick="getSearch()">
+            Search
+          </button>
+        </div>
+    </form>
+    <h1 id="loading"></h1>
+    <div class="grid grid-cols-3 px-16" id="news"></div>
+    
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- index.js -->
-    <script src="index.js"></script>
+    <script src="index.js" ></script>
 </body>
 </html>
