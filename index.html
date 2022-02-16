@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Using Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>List of Users</title>
+</head>
+<body>
+    <div class="container px-9">
+        <h1 class="text-3xl font-semibold pb-2">
+            List of Users
+        </h1>
+        <table class="border border-slate-500 border">
+            <thead>
+                <tr class="bg-slate-500 text-slate-300 text-left">
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">ID</th>
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Name</th>
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Username</th>
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Email</th>
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Address</th>
+                    <th class="border-x-0 border-y-2 border-slate-600 px-2">Company</th>
+                </tr>
+            </thead>
+            <tbody id="user"></tbody>
+        </table>
+    </div>
+
+    <!-- index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
