@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Using Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Axios -->
   
   <title>Indo News | Portal Berita Asli Indonesia</title>
 </head>
@@ -18,8 +17,10 @@
 
     <form class="my-16 mx-auto px-24">
         <div class="flex items-center border-b border-teal-500 py-2">
+            <!-- input akan ditangkap oleh index.js -->
           <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" id="search" type="text" placeholder="Search News...">
-          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" onclick="getSearch()">
+          <!-- ketika diklik maka function getSearch akan dipanggil -->
+          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" onclick="getSearch()"> 
             Search
           </button>
         </div>
