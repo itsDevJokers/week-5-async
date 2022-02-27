@@ -21,7 +21,7 @@ function getData(url, cb) {
       table.innerHTML = render(data);
   });
 
-//   Membuat function render untuk menampilkan isi data dari table
+//   Membuat function render untuk menampilkan isi data dari table berdasarkan api yang difetch
 function render(result) {
     let table = "";
     result.map(data => {
